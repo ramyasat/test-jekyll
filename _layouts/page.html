@@ -3,23 +3,23 @@
 	<head>
 		<title>{{ page.title }} | {{ site.title }}</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href={{ "css/style.css" | relative_url }}>
 	</head>
 	<body>
 		<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
+    			<ul>
+        			<li><a href="{{site.baseurl}}">Home</a></li>
+        			<li><a href={{ "blog" | relative_url }}>Blog</a></li>
+    			</ul>
 		</nav>
 		<div class="container">
-			
+		
 			{{ content }}
-			
+		
 		</div><!-- /.container -->
 		<footer>
 	    		<ul>
-	        		<li><a href="https://github.com/[username]">github.com/[username]</a></li>
+        			<li><a href="https://github.com/ramyasat">github.com/[username]</a></li>
 			</ul>
 		</footer>
 	</body>

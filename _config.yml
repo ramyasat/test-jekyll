@@ -2,4 +2,4 @@ title: [WEBSITE NAME]
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
-remote_theme: fangandrew/hydeout/
+remote_theme: fongandrew/hydeout/
